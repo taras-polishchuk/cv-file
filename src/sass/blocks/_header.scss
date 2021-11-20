@@ -1,0 +1,29 @@
+.header {
+    &__title {
+        margin: 0;
+        margin-top: 50px;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: .2em;
+        color: #2d2f31;
+    }
+    &__position-name {
+        margin-top: 15px;
+        width: 190px;
+        height: 32px;
+        background-color: #ebebeb;
+        font-size: 15px;
+        line-height: 32px;
+        color: #5a5a5a;
+        text-align: center;
+        transition: all 1s;
+        &::first-letter {
+            font-size: 20px;
+        }
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}

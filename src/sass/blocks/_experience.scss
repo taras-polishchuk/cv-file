@@ -1,0 +1,17 @@
+.experience {
+    &__wrapper {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__item_1 {
+        width: 40%;
+        margin-right: 30px;
+    }
+    &__item_2 {
+        width: 60%;
+    }
+    &__subtitle {
+        line-height: 1.3em;
+    }
+}

@@ -1,0 +1,20 @@
+.about-me {
+    &__text {
+        margin-top: 20px;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            line-height: 13px;
+            background-color: rgb(211, 210, 210);
+            padding: 3px;
+            transition: all 1s;
+            &:hover {
+                background: rgb(44, 44, 44);
+                color:rgb(211, 210, 210);
+                transition: all 1s;
+            }
+        }
+    }
+}

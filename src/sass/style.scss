@@ -1,0 +1,73 @@
+@import 'libs/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    &__container {
+        width: 90%;
+        padding: 0 50px;
+    }
+    &__column_1 {
+        width: 70vw;
+    }
+    &__column_2 {
+        width: 30vw;
+    }
+}
+
+.title {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 40px;
+    position: relative;
+    width: fit-content;
+    transition: all 1s;
+    z-index: 3;
+    &::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        background-color: black;
+        transition: all 1s;
+    }
+    &_hovered {
+        color: white;
+        padding-left: 5px;
+        &::after {
+            width: 142px;
+            height: 35px;
+            top: -4px;
+            left: 0px;
+            background-color: #000;
+            transform: rotate(180deg);
+            z-index: -1;
+        }
+    }
+}
+p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 25px
+}
+
+@import 'blocks/header';
+@import 'blocks/about-me';
+@import 'blocks/experience';
+@import 'blocks/info';
+@import 'blocks/skills';
+@import 'blocks/hobbies';
+
+@import 'base/media';
